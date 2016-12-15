@@ -66,12 +66,12 @@ var selectSize  = document.getElementById("sizeSelect").value
  if(drawing) {
 
    if(selectShape == "circle") {
-drawSquare
 drawCircle(point.x, point.y, selectSize ,selectColor)
 
    }
+else {
+  drawSquare(point.x, point.y, selectSize ,selectColor)
 
-   drawSquare(point.x, point.y, selectSize ,selectColor)
-
+}
  }
 })
